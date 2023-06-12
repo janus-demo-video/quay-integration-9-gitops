@@ -1,0 +1,18 @@
+app:
+  name: quay-integration-9
+  namespace: quay-integration-9-dev
+  cluster: .apps.cluster-hppnd.hppnd.sandbox2560.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/janus-demo-video/quay-integration-9
+  org: janus-demo-video
+  name: quay-integration-9
+
+image:
+  registry: Openshift
+  organization: 
+  namespace: quay-integration-9-dev
+  host: image-registry.openshift-image-registry.svc:5000
+  name: quay-integration-9
+  tag: latest
